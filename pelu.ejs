@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class= "contenedor-grid">
+        <header>
+            <logo>
+                <h1> Pelu Go </h1>
+            </logo>
+
+            <barrita>
+                <h3>
+                    <form action="" id="subscribe">
+                    <input type="search" name="" id="">
+                    <button type="submit"> <img class="lupita" src="https://image.flaticon.com/icons/png/128/622/622669.png"></button>
+                    </form>
+                </h3>
+            </barrita>
+
+            <cuenta>
+                <img class="cuenta" src="Cuenta.png">
+            </cuenta>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li>HOME</li>
+                <li>CONTACTO</li>
+                <li class="desplegable">
+                    <span>CALENADRIO</span>
+                    <ul class="sub-menu">
+                        <li>MIS CONSULTAS</li>
+                        <li>EXPLORAR</li>
+                    </ul>
+                </li>
+                <li>PROMOS</li>
+                <li> <a href="NOVEDADES.html">NOVEDADES</li></a>
+        </ul>
+        </nav>
+
+        <slider>
+            <img class= "fotoslider" name="slider" > 
+        </slider>
+
+        <botones>
+            <mapa>
+                <a class= "mapa" href="https://www.google.com.uy/maps/place/Mister+barber+shop/@-34.8875184,-56.1668392,17z/data=!3m1!4b1!4m5!3m4!1s0x959f814ce4434523:0xb2b50168971a1969!8m2!3d-34.8875228!4d-56.1646505"> 
+                    <img class="mapa" src="https://image.flaticon.com/icons/png/128/535/535239.png"></a>
+                    <p> MAPA </p>
+            </mapa>
+            <promo>
+                <img class="logos" src="https://image.flaticon.com/icons/png/128/67/67281.png">
+                <p> PROMO</p> 
+            </promo>
+            <calenadrio>
+                <img class="logos" src="https://image.flaticon.com/icons/png/128/747/747310.png">
+                <p> CALENDARIO</p>
+            </calenario>
+        </botones>
+        
+        <ofertas>
+                <oferta1>
+                    <img class="promos" src = "cortenormal.jpg">
+                    <p> ¡Busca los mejores loclaes con ofertas en cortes de hombres!</p>
+                </oferta1>
+
+                <oferta2>
+                    <img class="promos" src = "corteninos.jpg">
+                    <p> ¡Busca los mejores loclaes con ofertas en cortes de niños!</p>
+                </oferta2>
+
+                <oferta3>
+                    <img class="promos" src = "cortemujeres.jpg">
+                    <p> ¡Busca los mejores loclaes con ofertas en cortes de mujeres!</p>
+                </oferta3>
+
+                <oferta4>
+                    <img class="promos"src = "cortecolor.jpg">
+                    <p> ¡Busca los mejores loclaes con ofertas en hacer color!</p>
+                </oferta4>
+        </ofertas>
+
+        <footer>
+            <barra>.</barra>
+            <redes>
+                <p> ✆ 092 450 370</p>
+                <p>@santi_caceres_</p>
+            </redes>
+
+        </footer>
+
+    <script>
+        window.addEventListener("load",function () {
+            console.log("el contendio a cargado");
+
+            var imagenes = [];
+            imagenes [0] = "imagen1.jpg";
+            imagenes [1] = "imagen2.jpg";
+            imagenes [2] = "imagen3.jpg";
+
+            var indicedeimagenes = 0;
+
+            function cambiarimagenes () {
+
+            document.slider.src = imagenes [indicedeimagenes];
+
+            if (indicedeimagenes < 2) {
+                indicedeimagenes++ ;
+            } else {
+                indicedeimagenes = 0
+            }
+
+
+            }
+
+            setInterval (cambiarimagenes, 2000);
+        });
+    </script>
+</body>
+</html>
